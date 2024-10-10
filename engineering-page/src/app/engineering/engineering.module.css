@@ -1,0 +1,45 @@
+/* app/engineering/engineering.module.css */
+
+.container {
+    padding: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.hero {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-top: 1rem;
+}
+
+.details h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.details ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+}
+
+.contact {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.contact .button {
+    padding: 0.75rem 2rem;
+    background-color: #0070f3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.contact .button:hover {
+    background-color: #005bb5;
+}
