@@ -1,0 +1,43 @@
+.footer {
+    background-color: #1a3666;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 2rem;
+
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contactInfo, .socialMedia {
+    margin: 10px;
+}
+
+.contactInfo h3, .socialMedia h3 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.contactInfo a, .socialMedia a {
+    color: white;
+    text-decoration: none;
+}
+
+.contactInfo a:hover, .socialMedia a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos locais para ul e li */
+.socialMedia ul {
+    list-style: none;
+    padding: 0;
+}
+
+.socialMedia ul li {
+    margin: 5px 0;
+}

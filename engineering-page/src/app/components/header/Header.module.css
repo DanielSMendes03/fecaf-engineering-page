@@ -1,7 +1,7 @@
 .header {
     position: relative;
     width: 100vw;
-    height: 20vh;
+    height: 15vh;
     background-image: url('../../../../public/images/cabeçalho_1.png');
     background-size: cover;
     background-position: center;
@@ -16,15 +16,27 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
 }
 
 .title {
     color: white;
     font-size: 2rem;
     font-weight: bold;
-    letter-spacing: 7vw;
+    letter-spacing: 1vw;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+    padding: 0 1rem;
+}
+
+.subtitle {
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 1vw;
     text-transform: uppercase;
     text-align: center;
     margin: 0;
@@ -36,11 +48,19 @@
         font-size: 3rem;
         letter-spacing: 0.8rem;
     }
+    .subtitle {
+        font-size: 0.8rem;
+        letter-spacing: 0.3rem;
+    }
 }
 
 @media (max-width: 480px) {
     .title {
         font-size: 2rem;
         letter-spacing: 0.5rem;
+    }
+    .subtitle {
+        font-size: 0.7rem;
+        letter-spacing: 0.2rem;
     }
 }
