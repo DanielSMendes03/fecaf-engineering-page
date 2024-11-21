@@ -13,7 +13,7 @@ const HeaderFecafLogin = () => {
       <button
         className={styles.button}
         onClick={() => {
-          window.location.href = 'http://aluno.unifecaf.edu.br/'
+          window.location.href = 'https://conteudo.fecaf.com.br/processo-seletivo-inscricao-vestibular'
         }}
       >
         <i className="fa fa-graduation-cap"></i>Fazer Matricula! 
