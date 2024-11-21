@@ -1,0 +1,91 @@
+.nav {
+    background-color: #242149;
+    color: white;
+    padding: 1rem;
+    z-index: 10; /* Para garantir que o menu tenha uma camada mais baixa */
+    position: relative;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    justify-content: space-around;
+    align-items: center;
+    position: relative; /* Necessário para o menuOverlay se alinhar corretamente */
+}
+
+.menuItem {
+    position: relative;
+}
+
+.menuButton {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s;
+    display: flex;
+    align-items: center;
+  }
+
+.menuButton:hover {
+    color: #433e7c;
+}
+
+/* Adiciona a seta ao lado do menu */
+.arrow {
+    display: inline-block;
+    margin-left: 10px;
+    width: 10px;
+    height: 10px;
+    border-left: 2px solid white;
+    border-bottom: 2px solid white;
+    transform: rotate(-45deg); /* Posição padrão: seta apontando para baixo */
+    transition: transform 0.4s ease; /* Transição suave para a rotação */
+  }
+  
+  /* Quando o submenu está aberto, rotaciona a seta para cima */
+  .arrow.open {
+    transform: rotate(135deg); /* Seta para cima */
+  }
+
+.submenu {
+    position: absolute;
+    top: 100%; /* Coloca o submenu logo abaixo do botão */
+    left: 0;
+    background-color: #242149;
+    list-style: none;
+    margin: 0;
+    padding: 0.5rem 0;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 100; /* Garante que o submenu esteja acima de outros elementos */
+}
+
+.submenu li {
+    padding: 0.5rem 1rem;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submenu li:hover {
+    background-color: #7974b1;
+}
+
+.menuOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to top, rgba(0, 128, 0, 0) 97%, rgba(78, 253, 166, 0.486) 100%); /* Degradê transparente para verde */
+    z-index: 99; /* Sobrepõe o menu */
+    pointer-events: none; /* Evita bloquear cliques em outros elementos */
+}
+
+

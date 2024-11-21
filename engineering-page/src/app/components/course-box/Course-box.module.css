@@ -1,15 +1,14 @@
 .container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
-    /*gap: 10px; !* Espaço entre as caixas *!*/
     margin: 0.8rem; /* Ajuste esta margem para aumentar ou diminuir o espaço ao redor do container */
 }
 
 .box {
     position: relative;
-    width: 300px; /* Tamanho da largura da caixa */
-    height: 200px; /* Tamanho da altura da caixa */
+    width: 350px; /* Tamanho da largura da caixa */
+    height: 250px; /* Tamanho da altura da caixa */
     border-radius: 15px; /* Bordas arredondadas */
     overflow: hidden; /* Garante que a imagem e overlay fiquem dentro das bordas */
     transition: transform 0.3s ease-in-out; /* Efeito de transição ao passar o mouse */
@@ -83,4 +82,52 @@
 
 .details li {
     margin: 5px 0; /* Margem acima e abaixo de cada item da lista */
+}
+
+/* Estilo para os submenus */
+.submenus {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column; /* Alinha os submenus verticalmente */
+    gap: 0.5rem; /* Espaço entre os botões */
+}
+
+.submenu {
+    display: flex;
+    flex-direction: column;
+}
+
+.submenuButton {
+    background-color: #17a460; /* Cor de fundo azul */
+    color: white; /* Cor do texto branca */
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    text-align: left; /* Alinha o texto à esquerda */
+}
+
+.submenuButton:hover {
+    background-color: #46d38f; /* Fundo mais escuro ao passar o mouse */
+    transform: scale(1.02); /* Leve aumento no tamanho */
+}
+
+.submenuButton:active {
+    background-color: #46d38f; /* Fundo mais escuro ao clicar */
+    transform: scale(0.98); /* Leve redução no tamanho */
+}
+
+.detailText {
+    margin-top: 0.5rem; /* Espaço acima do texto expandido */
+    padding: 10px 15px;
+    background-color: #f1f1f1; /* Cor de fundo cinza claro */
+    border-left: 4px solid #007BFF; /* Borda lateral colorida */
+    border-radius: 4px; /* Bordas levemente arredondadas */
+    font-size: 0.95rem;
+    color: #333; /* Cor do texto */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Sombra sutil */
 }

@@ -1,7 +1,7 @@
 .header {
     position: relative;
     width: 100vw;
-    height: 15vh;
+    height: 30vh;
     background-image: url('../../../../public/images/cabeçalho_1.png');
     background-size: cover;
     background-position: center;
